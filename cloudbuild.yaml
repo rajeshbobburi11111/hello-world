@@ -1,13 +1,13 @@
 # cloudbuild.yaml
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'asia-south1-docker.pkg.dev/boxwood-sector-436512-f3/test1/helloworld:latest', '.']
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/boxwood-sector-436512-f3/test1/helloworld:latest', '.']
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'asia-south1-docker.pkg.dev/boxwood-sector-436512-f3/test1/helloworld:latest']
+    args: ['push', 'us-central1-docker.pkg.dev/boxwood-sector-436512-f3/test1/helloworld:latest']
 
 images:
-  - 'LOCATION-docker.pkg.dev/boxwood-sector-436512-f3/test1/helloworld:latest'
+  - 'us-central1-docker.pkg.dev/boxwood-sector-436512-f3/test1/helloworld:latest'
 
 # cloudbuild.yaml
 options:
